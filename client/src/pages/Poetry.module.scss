@@ -1,0 +1,126 @@
+.poetry {
+    // &::before {
+    //   display: inline-block;
+    //   position: absolute;
+    //   content: '';
+    //   // right: 12px;
+    //   // bottom: 10px;
+    //   // background-image: url('../assets/icons/decortop-left.svg');
+    //   background-image: url('../assets/bgr.jpg');
+    //   // background-size: cover;
+    //   background-repeat: repeat;
+    //   // padding: 30px;
+    //   // margin: 30px;
+    //   width: 100%;
+    //   height: 100%;
+    //   // transform: rotate(180deg);
+    // }
+
+}
+
+.meta {
+    min-height: 350px;
+    border-bottom: 1px solid #ff9e9e61;
+//     padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f4ff;
+}
+
+.imgInner {
+    width: 100%;
+    height: 600px;
+}
+
+.innerMenu {
+
+}
+
+.img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//     background-size: contain;
+    // opacity: 0.5;
+}
+
+.headline {
+    position: absolute;
+    top: 87px;
+    left: 0%;
+    font-size: 50px;
+    padding-top: 1px;
+    text-transform: uppercase;
+    background-color: #fff;
+    border-radius: 0px 5px 5px 0;
+    padding-left: 20%;
+    padding-right: 10px;
+    z-index: 20;
+    opacity: 0.8;
+    animation-name: Appearance;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+}
+
+@-webkit-keyframes Appearance {
+    0% {
+        opacity: 0;
+        left: -50%;
+    }
+    100% {
+        opacity: 0.8;
+        left: 0%;
+    }
+}
+
+@-o-keyframes Appearance {
+    0% {
+        opacity: 0;
+        left: -50%;
+    }
+    100% {
+        opacity: 0.8;
+        left: 0;
+    }
+}
+
+@-moz-keyframes Appearance {
+    0% {
+        opacity: 0;
+        left: -50%;
+    }
+    100% {
+        opacity: 0.8;
+        left: 0;
+    }
+}
+
+@keyframes Appearance {
+    0% {
+        opacity: 0;
+        left: -50%;
+    }
+    100% {
+        opacity: 0.8;
+        left: 0;
+    }
+}
+
+.inner {
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.whom {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 15px;
+}

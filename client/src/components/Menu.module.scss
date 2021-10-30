@@ -1,0 +1,48 @@
+.menu {
+  display: flex;
+}
+
+.item {
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+  color: brown;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 0px;
+    height: 2px;
+    margin-bottom: -4px;
+    background-color: brown;
+    transition: width 0.4s;
+  }
+
+  &.active::before {
+    width: 100%;
+    background-color: brown;
+  }
+
+  &:hover {
+    color: #00d9db;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .menu {
+    height: 35px;
+    font-size: 9px
+  }
+}

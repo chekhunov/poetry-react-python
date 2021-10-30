@@ -1,0 +1,28 @@
+$default: brown; //шрифт
+$title: brown; // заголовки
+
+%montserrat-400 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+%montserrat-700 {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-weight: 700;
+}
+%rollig-300 {
+  font-family: "Raleway-Italic", sans-serif;
+  font-weight: 300;
+}
+%rolital-400 {
+  font-family: "Raleway-Italic", sans-serif;
+  font-weight: 400;
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
